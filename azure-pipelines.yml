@@ -29,4 +29,4 @@ steps:
     Set-ExecutionPolicy AllSigned -Scope Process -Force
     $ProgressPreference = "SilentlyContinue"
     iex ((New-Object System.Net.WebClient).DownloadString('https://download.srcclr.com/ci.ps1'))
-    srcclr scan --ws 3OOuvgA $(Build.SourcesDirectory) --update-advisor
+    srcclr scan --ws lDDIaXg $(Build.SourcesDirectory) --update-advisor
