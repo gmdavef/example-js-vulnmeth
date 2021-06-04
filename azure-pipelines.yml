@@ -10,6 +10,15 @@ pool:
   vmImage: windows-latest
 
 steps:
+#- task: NodeTool@0
+#  inputs:
+#    versionSpec: '10.x'
+#  displayName: 'Install Node.js'
+
+#- script: |
+#    npm install
+#    npm run build
+#  displayName: 'npm install and build'
 - task: PowerShell@2
   displayName: 'Veracode SCA scan'
   env: {SRCCLR_API_TOKEN: $(SRCCLR_API_TOKEN)}
