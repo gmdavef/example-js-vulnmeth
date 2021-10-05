@@ -21,7 +21,7 @@ steps:
 #  displayName: 'npm install and build'
 - task: PowerShell@2
   displayName: 'Veracode SCA scan'
-  env: {SRCCLR_API_TOKEN: $(SRCCLR_API_TOKEN)}
+  env: {SRCCLR_API_TOKEN: $(apiToken)}
   inputs:
    targetType: 'inline'
    script: |
