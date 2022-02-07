@@ -1,4 +1,4 @@
 scope: production
 pr_on: medium
-no_breaking_updates: true
+no_breaking_updates: false
 ignore_closed_prs: true
