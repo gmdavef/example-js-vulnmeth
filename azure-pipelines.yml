@@ -29,4 +29,4 @@ steps:
     $ProgressPreference = "SilentlyContinue"
     iex ((New-Object System.Net.WebClient).DownloadString('https://download.srcclr.com/ci.ps1'))
     srcclr --version
-    srcclr scan --ws lDDIaXg $(Build.SourcesDirectory) --update-advisor
+    srcclr scan $(Build.SourcesDirectory)
